@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"smarthome\startup_stm32f103xb.o"
+"smarthome\main.o"
+"smarthome\gpio.o"
+"smarthome\usart.o"
+"smarthome\stm32f1xx_it.o"
+"smarthome\stm32f1xx_hal_msp.o"
+"smarthome\stm32f1xx_hal_gpio_ex.o"
+"smarthome\stm32f1xx_hal_tim.o"
+"smarthome\stm32f1xx_hal_tim_ex.o"
+"smarthome\stm32f1xx_hal_uart.o"
+"smarthome\stm32f1xx_hal.o"
+"smarthome\stm32f1xx_hal_rcc.o"
+"smarthome\stm32f1xx_hal_rcc_ex.o"
+"smarthome\stm32f1xx_hal_gpio.o"
+"smarthome\stm32f1xx_hal_dma.o"
+"smarthome\stm32f1xx_hal_cortex.o"
+"smarthome\stm32f1xx_hal_pwr.o"
+"smarthome\stm32f1xx_hal_flash.o"
+"smarthome\stm32f1xx_hal_flash_ex.o"
+"smarthome\stm32f1xx_hal_exti.o"
+"smarthome\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SmartHome\SmartHome.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SmartHome.map" -o SmartHome\SmartHome.axf

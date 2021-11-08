@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+".\pwm724\startup_stm32f103xb.o"
+".\pwm724\main.o"
+".\pwm724\stm32f1xx_it.o"
+".\pwm724\stm32f1xx_hal_msp.o"
+".\pwm724\stm32f1xx_hal_gpio_ex.o"
+".\pwm724\stm32f1xx_hal_tim.o"
+".\pwm724\stm32f1xx_hal_tim_ex.o"
+".\pwm724\stm32f1xx_hal.o"
+".\pwm724\stm32f1xx_hal_rcc.o"
+".\pwm724\stm32f1xx_hal_rcc_ex.o"
+".\pwm724\stm32f1xx_hal_gpio.o"
+".\pwm724\stm32f1xx_hal_dma.o"
+".\pwm724\stm32f1xx_hal_cortex.o"
+".\pwm724\stm32f1xx_hal_pwr.o"
+".\pwm724\stm32f1xx_hal_flash.o"
+".\pwm724\stm32f1xx_hal_flash_ex.o"
+".\pwm724\stm32f1xx_hal_exti.o"
+".\pwm724\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter ".\PWM724\PWM724.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM724.map" -o .\PWM724\PWM724.axf

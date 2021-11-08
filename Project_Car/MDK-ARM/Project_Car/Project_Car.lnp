@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"project_car\startup_stm32f103xb.o"
+"project_car\motors_control.o"
+"project_car\main.o"
+"project_car\gpio.o"
+"project_car\tim.o"
+"project_car\usart.o"
+"project_car\stm32f1xx_it.o"
+"project_car\stm32f1xx_hal_msp.o"
+"project_car\stm32f1xx_hal_gpio_ex.o"
+"project_car\stm32f1xx_hal_tim.o"
+"project_car\stm32f1xx_hal_tim_ex.o"
+"project_car\stm32f1xx_hal.o"
+"project_car\stm32f1xx_hal_rcc.o"
+"project_car\stm32f1xx_hal_rcc_ex.o"
+"project_car\stm32f1xx_hal_gpio.o"
+"project_car\stm32f1xx_hal_dma.o"
+"project_car\stm32f1xx_hal_cortex.o"
+"project_car\stm32f1xx_hal_pwr.o"
+"project_car\stm32f1xx_hal_flash.o"
+"project_car\stm32f1xx_hal_flash_ex.o"
+"project_car\stm32f1xx_hal_exti.o"
+"project_car\stm32f1xx_hal_uart.o"
+"project_car\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Project_Car\Project_Car.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Project_Car.map" -o Project_Car\Project_Car.axf

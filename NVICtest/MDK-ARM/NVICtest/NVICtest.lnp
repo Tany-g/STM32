@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"nvictest\startup_stm32f103xb.o"
+"nvictest\main.o"
+"nvictest\gpio.o"
+"nvictest\tim.o"
+"nvictest\stm32f1xx_it.o"
+"nvictest\stm32f1xx_hal_msp.o"
+"nvictest\stm32f1xx_hal_gpio_ex.o"
+"nvictest\stm32f1xx_hal_tim.o"
+"nvictest\stm32f1xx_hal_tim_ex.o"
+"nvictest\stm32f1xx_hal.o"
+"nvictest\stm32f1xx_hal_rcc.o"
+"nvictest\stm32f1xx_hal_rcc_ex.o"
+"nvictest\stm32f1xx_hal_gpio.o"
+"nvictest\stm32f1xx_hal_dma.o"
+"nvictest\stm32f1xx_hal_cortex.o"
+"nvictest\stm32f1xx_hal_pwr.o"
+"nvictest\stm32f1xx_hal_flash.o"
+"nvictest\stm32f1xx_hal_flash_ex.o"
+"nvictest\stm32f1xx_hal_exti.o"
+"nvictest\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "NVICtest\NVICtest.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NVICtest.map" -o NVICtest\NVICtest.axf

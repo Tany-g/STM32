@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"test7.12\startup_stm32f103xb.o"
+"test7.12\main.o"
+"test7.12\stm32f1xx_it.o"
+"test7.12\stm32f1xx_hal_msp.o"
+"test7.12\stm32f1xx_hal_gpio_ex.o"
+"test7.12\stm32f1xx_hal_tim.o"
+"test7.12\stm32f1xx_hal_tim_ex.o"
+"test7.12\stm32f1xx_hal.o"
+"test7.12\stm32f1xx_hal_rcc.o"
+"test7.12\stm32f1xx_hal_rcc_ex.o"
+"test7.12\stm32f1xx_hal_gpio.o"
+"test7.12\stm32f1xx_hal_dma.o"
+"test7.12\stm32f1xx_hal_cortex.o"
+"test7.12\stm32f1xx_hal_pwr.o"
+"test7.12\stm32f1xx_hal_flash.o"
+"test7.12\stm32f1xx_hal_flash_ex.o"
+"test7.12\stm32f1xx_hal_exti.o"
+"test7.12\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "test7.12\test7.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test7.map" -o test7.12\test7.12

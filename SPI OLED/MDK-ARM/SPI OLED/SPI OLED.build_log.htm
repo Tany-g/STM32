@@ -1,0 +1,112 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: f LENOVO, f, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+D:\STM32\SPI OLED\MDK-ARM\SPI OLED.uvprojx
+Project File Date:  11/08/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'SPI OLED'
+compiling main.c...
+../Core/Src/main.c(58): warning:  #223-D: function "OLED_DC_Set" declared implicitly
+  		OLED_DC_Set();//命令/数据标志位置为1，则表示传送的是命令字节
+../Core/Src/main.c(62): warning:  #223-D: function "OLED_DC_Clr" declared implicitly
+  	OLED_DC_Clr();//命令/数据标志位置为0，则表示传送的是数据字节		  
+../Core/Src/main.c(63): warning:  #223-D: function "OLED_CS_Clr" declared implicitly
+  	  OLED_CS_Clr();//片选信号为低，表示选中OLED
+../Core/Src/main.c(65): warning:  #223-D: function "OLED_CS_Set" declared implicitly
+  	  OLED_CS_Set();
+../Core/Src/main.c(66): warning:  #223-D: function "OLED_DC_Set" declared implicitly
+  	  OLED_DC_Set();	  
+../Core/Src/main.c(71): error:  #20: identifier "OLED_CMD" is undefined
+  	OLED_WR_Byte(0xb0+y,OLED_CMD);
+../Core/Src/main.c(78): error:  #20: identifier "OLED_CMD" is undefined
+  	OLED_WR_Byte(0X8D,OLED_CMD);  //设置电荷泵命令字
+../Core/Src/main.c(85): error:  #20: identifier "OLED_CMD" is undefined
+  	OLED_WR_Byte(0X8D,OLED_CMD);  //设置电荷泵命令字
+../Core/Src/main.c(95): error:  #20: identifier "OLED_CMD" is undefined
+  		OLED_WR_Byte (0xb0+i,OLED_CMD);    //设置页地址
+../Core/Src/main.c(98): error:  #20: identifier "OLED_DATA" is undefined
+  		for(n=0;n<128;n++)OLED_WR_Byte(0,OLED_DATA); 
+../Core/Src/main.c(112): error:  #20: identifier "Max_Column" is undefined
+  		if(x>Max_Column-1){x=0;y=y+2;}
+../Core/Src/main.c(113): error:  #20: identifier "SIZE" is undefined
+  		if(SIZE ==16)
+../Core/Src/main.c(117): error:  #20: identifier "F8X16" is undefined
+  			OLED_WR_Byte(F8X16[c*16+i],OLED_DATA);
+../Core/Src/main.c(117): error:  #20: identifier "OLED_DATA" is undefined
+  			OLED_WR_Byte(F8X16[c*16+i],OLED_DATA);
+../Core/Src/main.c(120): error:  #20: identifier "F8X16" is undefined
+  			OLED_WR_Byte(F8X16[c*16+i+8],OLED_DATA);
+../Core/Src/main.c(120): error:  #20: identifier "OLED_DATA" is undefined
+  			OLED_WR_Byte(F8X16[c*16+i+8],OLED_DATA);
+../Core/Src/main.c(125): error:  #20: identifier "F6x8" is undefined
+  				OLED_WR_Byte(F6x8[c][i],OLED_DATA);
+../Core/Src/main.c(125): error:  #20: identifier "OLED_DATA" is undefined
+  				OLED_WR_Byte(F6x8[c][i],OLED_DATA);
+../Core/Src/main.c(179): error:  #20: identifier "Hzk" is undefined
+  				OLED_WR_Byte(Hzk[2*no][t],OLED_DATA);
+../Core/Src/main.c(179): error:  #20: identifier "OLED_DATA" is undefined
+  				OLED_WR_Byte(Hzk[2*no][t],OLED_DATA);
+../Core/Src/main.c(185): error:  #20: identifier "Hzk" is undefined
+  				OLED_WR_Byte(Hzk[2*no+1][t],OLED_DATA);
+../Core/Src/main.c(185): error:  #20: identifier "OLED_DATA" is undefined
+  				OLED_WR_Byte(Hzk[2*no+1][t],OLED_DATA);
+../Core/Src/main.c(202): error:  #20: identifier "OLED_DATA" is undefined
+  	    	OLED_WR_Byte(BMP[j++],OLED_DATA);	    	
+../Core/Src/main.c(212): warning:  #223-D: function "OLED_RST_Clr" declared implicitly
+  	OLED_RST_Clr();
+../Core/Src/main.c(214): warning:  #223-D: function "OLED_RST_Set" declared implicitly
+  	OLED_RST_Set(); 
+../Core/Src/main.c(216): error:  #20: identifier "OLED_CMD" is undefined
+  	OLED_WR_Byte(0xAE,OLED_CMD);//--turn off oled panel
+../Core/Src/main.c: 7 warnings, 19 errors
+"SPI OLED\SPI OLED.axf" - 19 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_SPI_OLED
+  D:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Keil_v5\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

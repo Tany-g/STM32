@@ -1,0 +1,10 @@
+{
+    "editor.fontSize": 16,
+    "editor.fontFamily": "\"JetBrains Mono, 'Courier New', monospace\"",
+    "editor.fontLigatures": null,
+    "files.associations": {
+        "gpio.h": "c",
+        "tim.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

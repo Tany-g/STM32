@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"smartcar_infrared_obstacle_avoidance\startup_stm32f103xb.o"
+"smartcar_infrared_obstacle_avoidance\main.o"
+"smartcar_infrared_obstacle_avoidance\gpio.o"
+"smartcar_infrared_obstacle_avoidance\tim.o"
+"smartcar_infrared_obstacle_avoidance\usart.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_it.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_msp.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_gpio_ex.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_tim.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_tim_ex.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_rcc.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_rcc_ex.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_gpio.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_dma.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_cortex.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_pwr.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_flash.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_flash_ex.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_exti.o"
+"smartcar_infrared_obstacle_avoidance\stm32f1xx_hal_uart.o"
+"smartcar_infrared_obstacle_avoidance\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SmartCar_Infrared_obstacle_avoidance\SmartCar_Infrared_obstacle_avoidance.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SmartCar_Infrared_obstacle_avoidance.map" -o SmartCar_Infrared_obstacle_avoidance\SmartCar_Infrared_obstacle_avoidance.axf
